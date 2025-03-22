@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}URL 단축하기{% endblock %}
+
+{% block content %}
+    <form action="/" method="post">
+        <label for="url">URL 입력:</label><br>
+        <input type="text" name="url" id="url" placeholder="https://example.com" required>
+        <button type="submit">단축하기</button>
+    </form>
+{% endblock %}
